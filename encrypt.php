@@ -22,4 +22,5 @@ if(trim($file_contents)){
 
     }
 }
+unlink($upload_folder);
 echo $result;
