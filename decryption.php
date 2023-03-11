@@ -16,8 +16,8 @@ if (!empty($file_contents_array)){
     }
 }
 $text_length = strlen(str_replace(' ', '', trim($file_contents)));
-$array_percentege = array_map(function ($value){  global $text_length; return ($value * 100) /  $text_length;}, $repeating_number);
-$encryption_manager = new EncryptionManager($alphabets_apperance, $array_percentege);
+$percentage_of_repeating = array_map(function ($value){  global $text_length; return ($value * 100) /  $text_length;}, $repeating_number);
+$encryption_manager = new EncryptionManager($alphabets_apperance, $percentage_of_repeating);
 $key_value = $encryption_manager->get_key();
 $result = '';
 $content = str_split($file_contents);

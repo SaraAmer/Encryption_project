@@ -30,11 +30,7 @@ class EncryptionManager
     }
 
     public function get_key(){
-        $previous_corelation = -50000;
-        $current_corelation = -1;
-        $corelation = - 50000;
         $index = 0;
-        $flag = true;
         $corelation_values = [];
         while ($index < 26){
             $corelation_values[] = $this->get_corelation();
